@@ -14,11 +14,17 @@ class OrganizationSeeder extends Seeder
     public function run(): void
     {
         $organizations = [
-            ['name' => 'Organization A'],
-            ['name' => 'Organization B'],
-            ['name' => 'Organization C'],
-            ['name' => 'Organization D'],
-            ['name' => 'Organization E'],
+            ['name' => 'Al-Noor Specialist Hospital'],
+            ['name' => 'Binladin Group'],
+            ['name' => 'Kidana Development Company'],
+            ['name' => 'Ministry of Hajj and Umrah'],
+            ['name' => 'National Water Company'],
+            ['name' => 'Royal Commission for Makkah City and Holy Sites'],
+            ['name' => 'Saudi Electricity Company'],
+            ['name' => 'Security Forces Hospital'],
+            ['name' => 'STC'],
+            ['name' => 'WadiMakkah Company'],
+
         ];
         foreach ($organizations as $organization) {
             Organization::create($organization);

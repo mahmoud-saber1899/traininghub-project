@@ -10,6 +10,6 @@ class WelcomeController extends Controller
     public function index()
     {
         $orgnizations = Organization::with('ratings')->get();
-        return view('main', compact('orgnizations'));
+        return view('main-new', compact('orgnizations'));
     }
 }
